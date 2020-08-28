@@ -2,12 +2,23 @@ import React, { useEffect, useState } from 'react';
 import dayjs from "dayjs";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Loader from 'react-loader-spinner';
 import Graph from './Graph';
 import Button from './Button';
 import advancedFormat from "dayjs/plugin/advancedFormat";
 dayjs.extend(advancedFormat);
 
 const APIURL = `https://api.coingecko.com/api/v3/`;
+
+const styles = {
+  container: {
+    // "margin": "0 auto",
+    "width": 800,
+    "text-align": "center",
+    "margin-top": 150,
+  }
+};
 
 function App() {
   const [startDate, setStartDate] = useState(new Date('01/01/2020'));
@@ -90,7 +101,15 @@ function App() {
       <Button setStartDate={setDate} period={1825}>5Y</Button>
       <Button setStartDate={setDate} period={3650}>Max</Button>
 
-      <Graph data={coinData}/>
+      {isLoading
+        ? <Loader
+          type="ThreeDots" color="#8884d8" height={80} width={80}
+          style={styles.container}
+        />
+        : <Graph data={coinData}/>
+        } 
+      
+
     </div>
   );
 }

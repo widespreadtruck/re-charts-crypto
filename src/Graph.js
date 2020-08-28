@@ -26,6 +26,7 @@ const Graph = ({ data }) => {
     maxPrice = Math.max(...dataArr.map(i => i.price), 0).toFixed();
     // console.log('max:', maxPrice);
     // console.log("dataArr:", dataArr);
+    const minMaxYValues = [0, dataMax => (Number(maxPrice) + 500)];
 
     return (
         <div style={styles.container}>
@@ -34,7 +35,7 @@ const Graph = ({ data }) => {
                 <CartesianGrid strokeDasharray="3 3" />
                 <Tooltip />
                 <XAxis dataKey="date" />
-                <YAxis interval="preserveEnd" type="number" domain={[0, dataMax => (Number(maxPrice) + 500)]}/>
+                <YAxis interval={0} type="number" domain={minMaxYValues}/>
                 <Area dataKey="price" stroke='none' fill='#8884d8'/>
             </AreaChart>
         </div>

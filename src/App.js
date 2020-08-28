@@ -49,7 +49,9 @@ function App() {
     const url = `${APIURL}coins/bitcoin/market_chart/${range}`;
     try {
       const coinResponse = await fetch(url);
+      console.log(url);
       const data = await coinResponse.json();
+      // console.log(data);
       setCoinData(data.prices);
       setError(false);
       setIsLoading(false)
@@ -103,7 +105,7 @@ function App() {
 
       {isLoading
         ? <Loader
-          type="ThreeDots" color="#8884d8" height={80} width={80}
+          type="ThreeDots" color="#009FFF" height={80} width={80}
           style={styles.container}
         />
         : <Graph data={coinData}/>

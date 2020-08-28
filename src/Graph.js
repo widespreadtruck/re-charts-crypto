@@ -36,7 +36,7 @@ const Graph = ({ data }) => {
                 <Tooltip />
                 <XAxis dataKey="date" />
                 <YAxis interval={0} type="number" domain={minMaxYValues}/>
-                <Area dataKey="price" stroke='none' fill='#8884d8'/>
+                <Area dataKey="price" stroke='none' fill='#009FFF'/>
             </AreaChart>
         </div>
     )

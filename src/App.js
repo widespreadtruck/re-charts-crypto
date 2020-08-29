@@ -13,10 +13,9 @@ const APIURL = `https://api.coingecko.com/api/v3/`;
 
 const styles = {
   container: {
-    // "margin": "0 auto",
-    "width": 800,
-    "text-align": "center",
-    "margin-top": 150,
+    "width": "800px",
+    "textAlign": "center",
+    "marginTop": "150px",
   }
 };
 
@@ -49,7 +48,7 @@ function App() {
     const url = `${APIURL}coins/bitcoin/market_chart/${range}`;
     try {
       const coinResponse = await fetch(url);
-      console.log(url);
+      // console.log(url);
       const data = await coinResponse.json();
       // console.log(data);
       setCoinData(data.prices);
@@ -73,9 +72,10 @@ function App() {
   if (error) content = 'Oops... There\'s an error';
 
   const setDate = (date) => {
-    console.log('New Start Date is:', date);
+    // console.log('New Start Date is:', date);
     setStartDate(date);
-  }
+  };
+  
 
   return (
     <div>

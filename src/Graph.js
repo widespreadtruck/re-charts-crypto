@@ -14,14 +14,15 @@ const Graph = ({ data }) => {
 
     let dataArr = [];
     let maxPrice = 20000;
+
     for ( let i = 0; i < data.length; i++) {
-        const date = dayjs(data[i].[0]).format('DD/MM/YYYY');
         const price = data[i].[1].toFixed(4);
+        const date = dayjs(data[i].[0]).format('D/MMM/YY');
 
         dataArr.push({
             date,
             price
-        })
+        });
     };
     maxPrice = Math.max(...dataArr.map(i => i.price), 0).toFixed();
     // console.log('max:', maxPrice);
@@ -42,4 +43,4 @@ const Graph = ({ data }) => {
     )
 }
 
-export default Graph
+export default Graph;

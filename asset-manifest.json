@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/re-charts-crypto/static/js/main.c2b0bc85.chunk.js",
+    "main.js.map": "/re-charts-crypto/static/js/main.c2b0bc85.chunk.js.map",
+    "runtime-main.js": "/re-charts-crypto/static/js/runtime-main.1f75bbce.js",
+    "runtime-main.js.map": "/re-charts-crypto/static/js/runtime-main.1f75bbce.js.map",
+    "static/css/2.85a10fea.chunk.css": "/re-charts-crypto/static/css/2.85a10fea.chunk.css",
+    "static/js/2.551785f2.chunk.js": "/re-charts-crypto/static/js/2.551785f2.chunk.js",
+    "static/js/2.551785f2.chunk.js.map": "/re-charts-crypto/static/js/2.551785f2.chunk.js.map",
+    "index.html": "/re-charts-crypto/index.html",
+    "precache-manifest.367d9b841c30d4db9a2b804ddb62da8b.js": "/re-charts-crypto/precache-manifest.367d9b841c30d4db9a2b804ddb62da8b.js",
+    "service-worker.js": "/re-charts-crypto/service-worker.js",
+    "static/css/2.85a10fea.chunk.css.map": "/re-charts-crypto/static/css/2.85a10fea.chunk.css.map",
+    "static/js/2.551785f2.chunk.js.LICENSE.txt": "/re-charts-crypto/static/js/2.551785f2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1f75bbce.js",
+    "static/css/2.85a10fea.chunk.css",
+    "static/js/2.551785f2.chunk.js",
+    "static/js/main.c2b0bc85.chunk.js"
+  ]
+}
